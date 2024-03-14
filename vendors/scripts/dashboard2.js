@@ -134,7 +134,7 @@ Highcharts.chart('chart', {
 		data: [35, 25, 10, 40, 15, 5, 38]
 	}]
 });
-Highcharts.chart('compliance-trend', {
+Highcharts.chart('Activity', {
 	chart: {
 		type: 'column'
 	},
@@ -146,7 +146,7 @@ Highcharts.chart('compliance-trend', {
 		enabled: false
 	},
 	xAxis: {
-		categories: ['1th Sep', '2th Sep', '3th Sep', '4th Sep', '5th Sep', '6th Sep', '7th Sep', '8th Sep', '9th Sep', '10th Sep'],
+		categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
 		crosshair: true,
 		lineWidth:1,
 		lineColor: '#979797',
@@ -192,15 +192,15 @@ Highcharts.chart('compliance-trend', {
 		}
 	},
 	series: [{
-		name: 'Success',
+		name: 'Unforseen cases',
 		maxPointWidth: 10,
 		data: [50, 30, 40, 70, 20, 50, 30, 40, 70, 20,]
 	}, {
-		name: 'Warning',
+		name: 'Completed',
 		maxPointWidth: 10,
 		data: [0, 20, 30, 20, 10, 50, 30, 40, 10, 20,]
 	}, {
-		name: 'Error',
+		name: 'Outstanding',
 		maxPointWidth: 10,
 		data: [50, 50, 30, 10, 70, 0, 40, 20, 20, 60,]
 	}]
